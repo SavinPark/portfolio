@@ -1,5 +1,9 @@
 // reset
-@import url('./reset.scss');
+@import url('./base/reset.scss');
 
 // App
 @import url('./App.scss');
+
+// Media
+@import url('./media-query/tablet.scss');
+@import url('./media-query/mobile.scss');
