@@ -1,15 +1,42 @@
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
-    margin: 2.5vh auto;
-    border: 1px solid blue;
-}
-.feedbox {
-    width: 20vw;
-    height: 20vw;
-    margin: 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border: 1px solid blue;
+
+  .feedbox {
+    // width: 20vw;
+    // height: 20vw;
+    border: 1px solid purple;
     background-color: rgba(0, 0, 0, .12);
+  }
+
+  // Desktop
+  @include desktop($desktop-size) {
+    .feedbox {
+      margin: $desktop-size auto;
+      width: $desktop-size * 16;
+      height: $desktop-size * 16;
+    }
+  }
+
+  // Tablet
+  @include tablet($tablet-size) {
+    .feedbox {
+      margin: $tablet-size auto;
+      width: $tablet-size * 16;
+      height: $tablet-size * 16;
+    }
+  }
+
+  // Mobile
+  @include mobile($mobile-size) {
+    .feedbox {
+      margin: $mobile-size auto;
+      width: $mobile-size * 13;
+      height: $mobile-size * 13;
+    }
+  }
 }

@@ -3,10 +3,13 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    width: 60vw;
+    margin: 2.5vh auto;
+    border: 1px solid blue;
 }
 .feedbox {
-    width: $size * 34;
-    height: $size * 34;
+    width: 20vw;
+    height: 20vw;
     margin: 1px;
     background-color: rgba(0, 0, 0, .12);
 }

@@ -10,16 +10,16 @@ import { useState } from 'react';
 
 function App() {
 
-  const nav = document.querySelector('.navigation');
+  // const nav = document.querySelector('.navigation');
 
-  // const [menu, setMenu] = useState(false);
-  const menuToggle = (event) => {
-    // setMenu(!menu);
-    // console.log(`menu Tab: ${menu}`)
-    console.log(event.target);
-    // event.stopPropagation();
-    nav.classList.toggle('active');
-  }
+  // // const [menu, setMenu] = useState(false);
+  // const menuToggle = (event) => {
+  //   // setMenu(!menu);
+  //   // console.log(`menu Tab: ${menu}`)
+  //   console.log(event.target);
+  //   // event.stopPropagation();
+  //   nav.classList.toggle('active');
+  // }
 
   return (
     <div className="App">
@@ -28,7 +28,7 @@ function App() {
         <div className='container'>
           <h1 className='header-title'>Savingram</h1>
           <nav className='navigation'>
-            <div className='nav-btn' onClick={menuToggle}>
+            <div className='nav-btn'>
               <i className ='bx bx-menu'></i>
             </div>
             <ul>
