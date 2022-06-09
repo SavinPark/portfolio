@@ -1,18 +1,14 @@
-// base
-@import './base/variales.scss';
-@import './base/mixins.scss';
+// Base
 @import './base/reset.scss';
+@import './base/common.scss';
 
-// App
-@import'./App.scss';
-
-// Pages
-@import './pages/Projects.scss';
+// Abstracts
+@import './abstracts/variables/variales';
+@import './abstracts/mixins/mixin_media';
+// @import './abstracts/mixins/mixin_font';
 
 // Components
-@import './component/Feed.scss';
 
 
-// Media
-// @import './media-query/tablet.scss';
-// @import './media-query/mobile.scss';
+// Pages
+@import './pages/App.scss';

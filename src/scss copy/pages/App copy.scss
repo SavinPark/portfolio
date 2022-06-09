@@ -1,0 +1,84 @@
+/* --- FONT --- */
+@font-face {
+  font-family: 'Billabong';
+  src: url('../fonts/Billabong.ttf');
+}
+@include font-face('Billabong', 'Billabong');
+
+/* --- COMMON --- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width:  $size * 102.4;
+  margin: $size auto;
+  // border: 1px solid red;
+}
+
+
+/* --- HEADER --- */
+.header {
+  display: flex;
+  align-items: center;
+  height: $size * 6;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.header-title {
+  font-family: 'Billabong';
+  font-size: $size * 4;
+  font-weight: 500;
+}
+
+
+/* --- PROFILE --- */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: $size * 20;
+  // border: 1px solid red;
+}
+.profile-img {
+  // margin: #{$size};
+  // border: 1px solid red;
+}
+.profile-img img {
+  width: $size * 12;
+  border-radius: $size * 6;
+}
+.profile-txt {
+  width: $size * 60;
+  // border: 1px solid red;
+}
+
+
+/* --- NAVIGATION --- */
+.navigation {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  // border: 1px solid red;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: $size * 60;
+  height: $size * 5;
+  margin: $size 0 $size * 2;
+  // border: 1px solid blue;
+}
+.navigation Link,
+.navigation Link:visited {
+  // color: #000;
+  // text-decoration: none;
+}
+
+
+/* --- MAIN --- */
+main {
+  // border: 1px solid rgb(19, 140, 0);
+}
