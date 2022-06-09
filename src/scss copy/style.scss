@@ -1,0 +1,18 @@
+// base
+@import './base/variales.scss';
+@import './base/mixins.scss';
+@import './base/reset.scss';
+
+// App
+@import'./App.scss';
+
+// Pages
+@import './pages/Projects.scss';
+
+// Components
+@import './component/Feed.scss';
+
+
+// Media
+// @import './media-query/tablet.scss';
+// @import './media-query/mobile.scss';

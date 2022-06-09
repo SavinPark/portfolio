@@ -1,9 +1,14 @@
-// reset
-@import url('./base/reset.scss');
+// Base
+@import './base/reset.scss';
+@import './base/common.scss';
 
-// App
-@import url('./App.scss');
+// Abstracts
+@import './abstracts/variables/variales';
+@import './abstracts/mixins/mixin_media';
+// @import './abstracts/mixins/mixin_font';
 
-// Media
-@import url('./media-query/tablet.scss');
-@import url('./media-query/mobile.scss');
+// Components
+
+
+// Pages
+@import './pages/App.scss';

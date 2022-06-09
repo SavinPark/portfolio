@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Billabong';
+  src: url('../abstracts/fonts/Billabong.ttf');
+}
+
+// Base
+.App {
+  .container {
+    margin: 0 auto;
+    width: 94vw;
+    // border: 1px solid red;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    .header-title {
+      font-family: 'Billabong';
+    }
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid red;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid blue;
+    }
+  }
+
+
+  // Desktop
+  @include desktop($desktop-size) {
+    .container {
+      // width: $desktop-size * 75;
+      background-color: aquamarine;
+    }
+    .header {
+      height: $desktop-size * 4;
+      
+      .header-title {
+        font-size: $desktop-size * 2;
+      }
+    }
+    .navigation {
+      ul {
+        width: $desktop-size * 10;
+        height: $desktop-size * 4;
+        margin: $desktop-size 0;
+        // border: 1px solid blue;
+      }
+    }
+  }
+  // Tablet
+  @include tablet($tablet-size) {
+    .container {
+      width: $tablet-size * 75;
+      background-color: rgb(127, 180, 255);
+    }
+    .header {
+      height: $tablet-size * 4;
+      .header-title {
+        font-size: $tablet-size * 2;
+      }
+    }
+    .navigation {
+      ul {
+        width: $tablet-size * 60;
+        height: $tablet-size * 5;
+        margin: $tablet-size 0 $tablet-size * 2;
+        // border: 1px solid blue;
+      }
+    }
+
+  }
+  // Mobile
+  @include mobile($mobile-size) {
+    .container {
+      width: $mobile-size * 75;
+      background-color: rgb(248, 255, 146);
+    }
+    .header {
+      height: $mobile-size * 4;
+
+      .header-title {
+        font-size: $mobile-size * 2;
+      }
+    }
+    .navigation {
+      ul {
+        width: $mobile-size * 60;
+        height: $mobile-size * 5;
+        margin: $mobile-size 0 $mobile-size * 2;
+        // border: 1px solid blue;
+      }
+    }
+
+  }
+}

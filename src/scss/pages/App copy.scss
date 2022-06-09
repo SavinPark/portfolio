@@ -3,14 +3,7 @@
   font-family: 'Billabong';
   src: url('../fonts/Billabong.ttf');
 }
-
-
-/* --- SIZE --- */
-$desktop : 10px;
-$tablet : 10px;
-$mobile : 10px;
-$size : #{$desktop};
-
+@include font-face('Billabong', 'Billabong');
 
 /* --- COMMON --- */
 *,
@@ -20,8 +13,8 @@ $size : #{$desktop};
 }
 
 .container {
-  width: 1024px;
-  margin: #{$size} auto;
+  width:  $size * 102.4;
+  margin: $size auto;
   // border: 1px solid red;
 }
 
@@ -30,12 +23,12 @@ $size : #{$desktop};
 .header {
   display: flex;
   align-items: center;
-  height: calc(#{$size} * 6);
+  height: $size * 6;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 .header-title {
   font-family: 'Billabong';
-  font-size: calc(#{$size} * 4);
+  font-size: $size * 4;
   font-weight: 500;
 }
 
@@ -45,20 +38,20 @@ $size : #{$desktop};
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: calc(#{$size} * 20);
-  border: 1px solid red;
+  height: $size * 20;
+  // border: 1px solid red;
 }
 .profile-img {
   // margin: #{$size};
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .profile-img img {
-  width: calc(#{$size} * 12);
-  border-radius: calc(#{$size} * 6);
+  width: $size * 12;
+  border-radius: $size * 6;
 }
 .profile-txt {
-  width: calc(#{$size} * 60);
-  border: 1px solid red;
+  width: $size * 60;
+  // border: 1px solid red;
 }
 
 
@@ -73,9 +66,10 @@ $size : #{$desktop};
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: calc(#{$size} * 60);
-  height: calc(#{$size} * 4);
-  border: 1px solid blue;
+  width: $size * 60;
+  height: $size * 5;
+  margin: $size 0 $size * 2;
+  // border: 1px solid blue;
 }
 .navigation Link,
 .navigation Link:visited {
@@ -86,5 +80,5 @@ $size : #{$desktop};
 
 /* --- MAIN --- */
 main {
-  border: 1px solid rgb(19, 140, 0);
+  // border: 1px solid rgb(19, 140, 0);
 }

@@ -1,0 +1,12 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.feedbox {
+    width: $size * 34;
+    height: $size * 34;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, .12);
+}
