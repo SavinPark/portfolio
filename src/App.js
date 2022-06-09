@@ -26,7 +26,7 @@ function App() {
       {/* header */}
       <header className="header">
         <div className='container'>
-          <h1 className='header-title'>Savingram</h1>
+          <h1 className='header-title'><a href='/portfolio'>Savingram</a></h1>
           <nav className='navigation'>
             <div className='nav-btn'>
               <i className ='bx bx-menu'></i>
@@ -45,7 +45,7 @@ function App() {
       <main>
         <div className='container'>
           <Routes>
-            <Route path="/" exact={true} element={<Home/>} />
+            <Route path="/portfolio" exact={true} element={<Home/>} />
             <Route path="/about" exact={true} element={<About/>} />
             <Route path="/skills" element={<Skills/>} />
             <Route path="/projects" element={<Projects/>} />

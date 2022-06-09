@@ -1,0 +1,67 @@
+.feed-container {
+    width: $size * 90;
+    height: $size * 90;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    // border: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* --- account --- */
+.feed-account {
+    display: flex;
+    align-items: center;
+    margin-left: $size * 1.5;
+    height: $size * 6;
+}
+.account-img {
+    width: $size * 4;
+    height: $size * 4;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .12);
+}
+.account-name {
+    margin-left: $size * 1.5;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .8);
+}
+
+/* --- thumnail --- */
+.feed-thumnail {
+    width: $size * 90;
+    height: $size * 60;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+/* --- buttons --- */
+.feed-btns {
+    position: relative;
+    margin: $desktop * 2;
+    // border: 1px solid red;
+}
+.feed-btns i {
+    width: $size * 4;
+    height: $size * 4;
+    text-align: center;
+    font-size: $size * 3.5;
+    margin-right: $size * 0.5;
+    color: rgba(0, 0, 0, .8);
+    // border: 1px solid red;
+}
+.feed-btns i:last-child {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+.feed-btns i.heart {
+    color: red;
+}
+
+/* --- details --- */
+.feed-details {
+    margin: $desktop * 2;
+    // border: 1px solid red;
+}
+.details-title {
+    font-weight: 600;
+    margin-bottom: $desktop * 2;
+}

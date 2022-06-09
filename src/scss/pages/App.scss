@@ -12,11 +12,14 @@
 
   /* --- HEADER --- */
   .header {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     // width: 100vw;
+    background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    z-index: 9;
 
     .container {
       display: flex;
@@ -31,6 +34,7 @@
     .navigation {
       display: flex;
       justify-content: center;
+      background-color: #fff;
 
       // border: 1px solid red;
       .nav-btn {
@@ -58,7 +62,7 @@
     }
     /* --- HEADER --- */
     .header {
-      background-color: #f7dcff;
+      // background-color: #f7dcff;
       height: $desktop-size * 4;
 
       .header-title {
@@ -90,7 +94,7 @@
 
     /* --- HEADER --- */
     .header {
-      background-color: rgb(180, 211, 255);
+      // background-color: rgb(180, 211, 255);
       height: $tablet-size * 4;
 
       .header-title {
@@ -117,16 +121,19 @@
   // Mobile
   @include mobile($mobile-size) {
     .container {
-      width: $mobile-size * 40;
-      // width: 100vw;
+      margin: 0;
+      // width: $mobile-size * 40;
+      width: 100vw;
       // padding: $mobile-size*2;
     }
 
     /* --- HEADER --- */
     .header {
-      background-color: rgb(208, 255, 194);
+      // background-color: rgb(208, 255, 194);
       height: $mobile-size * 4;
-
+      .container {
+        padding: 0 $mobile-size;
+      }
       .header-title {
         font-size: $mobile-size * 2.5;
       }
