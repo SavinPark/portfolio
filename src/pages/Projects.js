@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Feed from '../components/Feed';
 
 const FeedBox = styled.div`
-    border: 1px solid red
+    border: 1 px solid red;
 `
 
 function Projects() {
@@ -19,8 +19,6 @@ function Projects() {
             <Feed title="프로젝트 제목" contents="내용" link="링크" /> */}
 
             {/* VER (2) */}
-            <FeedBox className="feedbox"/>
-            <FeedBox className="feedbox"/>
             <FeedBox className="feedbox"/>
             <FeedBox className="feedbox"/>
             <FeedBox className="feedbox"/>
