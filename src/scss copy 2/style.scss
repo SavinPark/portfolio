@@ -3,19 +3,26 @@
 @import './base/reset.scss';
 @import './base/common.scss';
 
-// Abstracts
+// // Abstracts
 @import './abstracts/variables/variales';
 @import './abstracts/mixins/mixin_media';
 // @import './abstracts/mixins/mixin_font';
 
-// BoxIcons
-@import url('https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css');
+// // BoxIcons
+// @import url('https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css');
 
-// Components
-// @import './components/Feed.scss';
+// // Components
+@import './components/Bubbles';
+@import './components/Nav';
+@import './components/About';
+@import './components/Skills';
+@import './components/Projects';
+@import './components/Contact';
+@import './components/Footer';
 
 
-// Pages
-@import './pages/App.scss';
-@import './pages/About.scss';
-@import './pages/Projects.scss';
+// // Pages
+@import './pages/App';
+// @import './pages/Home.scss';
+// @import './pages/About.scss';
+// @import './pages/Projects.scss';

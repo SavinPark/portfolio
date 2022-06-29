@@ -1,4 +1,4 @@
-@import '../variables/variales';
+@import './variales';
 @mixin mobile () {
     @media (max-width: #{$breakpoint-tablet - 1}) {
         @content;

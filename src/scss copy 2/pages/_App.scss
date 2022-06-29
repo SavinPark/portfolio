@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Billabong';
+  src: url('../abstracts/fonts/Billabong.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+.App {
+  font-family: 'Nanum Gothic', sans-serif;
+  
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+    // border: 1px solid pink;
+  }
+  main {
+    background-color:aliceblue;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    z-index: -1;
+  }
+  section {
+    height: 400px;
+  }
+}
