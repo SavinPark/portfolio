@@ -8,10 +8,11 @@ footer {
         background-color: #7882A4;
         .container {
             display: flex;
-            align-items: center;
+            // align-items: center;
             justify-content: flex-end;
-            height: 50px;
-            font-size: 12px;
+            height: 80px;
+            padding: 20px;
+            font-size: 14px;
             color: #fff;
             // border: 1px solid red;
         }

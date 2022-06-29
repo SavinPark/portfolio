@@ -18,10 +18,10 @@ function App() {
         <Navigation />
         <main>
           <div className="container">
-            <a href='#about'><About/></a>
-            <a href='#skills'><Skills/></a>
-            <a href='#projects'><Projects/></a>
-            <a href='#contact'><Contact/></a>
+            <About/>
+            <Skills/>
+            <Projects/>
+            <Contact/>
           </div>
         </main>
       <Footer />
