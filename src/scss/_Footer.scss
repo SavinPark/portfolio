@@ -1,28 +1,24 @@
 footer {
-    // background-color: beige;
     position: absolute;
     left: 0;
     right: 0;
-    // bottom: 0;
     .footer-inner {
         background-color: #7882A4;
         .container {
             display: flex;
-            // align-items: center;
             justify-content: flex-end;
             height: 80px;
             padding: 20px;
             font-size: 14px;
             color: #fff;
-            // border: 1px solid red;
         }
     }
 
     // Wave
     .custom-shape-divider-bottom-1656519457 {
-        // position: absolute;
-        // // bottom: 50px;
-        // left: 0;
+        position: absolute;
+        bottom: 78px;
+        left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;

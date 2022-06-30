@@ -1,42 +1,75 @@
 #contact {
-    // flex-direction: column;
-    // align-items: center;
-    // padding-bottom: 50px;
-    
-    form {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto;
+
+    .contact-inner {
         display: flex;
         flex-direction: column;
-        width: 700px;
-        margin: 40px auto 0;
-        // border: 1px dashed pink;
-        input,
-        textarea {
-            font-family: 'Nanum Gothic', sans-serif;
-            font-size: 20px;
-            color: rgba(0, 0, 0, .7);
-            border: 1px solid rgba(0, 0, 0, .25);
-            margin-bottom: 30px;
-            &:focus {
-                outline: none;
-            }
-        }
-        input {
-            height: 60px;
-            padding: 0 20px;
-        }
-        textarea {
-            padding: 16px 20px;
-            resize: none;
-        }
+        justify-content: space-evenly;
+        width: 460px;
+        padding: 20px 0;
+    }
 
-        button {
-            width: 700px;
-            height: 60px;
+    .contact-left {
+        background-color: #fff;
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, .08);
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            width: 300px;
             margin: 0 auto;
-            color: #fff;
-            border: none;
-            background-color: rgb(60, 60, 165);
-            cursor: pointer;
+            text-align: center;
+        }
+        .img {
+            width: 300px;
+            height: 260px;
+            margin: 0 auto;
+            background-image: url("../images/letter.jpg");
+            background-size: cover;
+            background-position: center;
         }
     }
+
+    .contact-right {
+        form {
+            input,
+            textarea {
+                width: 460px;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 16px;
+                color: rgba(0, 0, 0, .7);
+                border: 1px solid rgba(0, 0, 0, .25);
+                margin-bottom: 16px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input {
+                height: 40px;
+                padding: 0 20px;
+            }
+            textarea {
+                padding: 16px 20px;
+                resize: none;
+            }
+            button {
+                width: 460px;
+                height: 40px;
+                margin: 0 auto;
+                color: #fff;
+                border: none;
+                background-color: #525E75;
+                cursor: pointer;
+                transition: background-color 0.2s, box-shadow 0.2s;
+                &:hover {
+                    background-color: #3c5788;
+                    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .25);
+                }
+            }
+        }
+    }
+    
 }

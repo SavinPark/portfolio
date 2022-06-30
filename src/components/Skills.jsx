@@ -8,7 +8,8 @@ function Skills() {
     return(
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
+            <p>준비 중 입니다.</p>
+            {/* <ul>
                 {
                     skills.map((ele, idx) => {
                         return (
@@ -21,7 +22,7 @@ function Skills() {
                         )
                     })
                 }
-            </ul>
+            </ul> */}
         </section>
     );
 }
