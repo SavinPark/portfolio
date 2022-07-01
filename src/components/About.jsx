@@ -1,7 +1,9 @@
 import React from 'react';
 import TypeIt from "typeit-react";
 import { FaBirthdayCake } from "react-icons/fa";
-import {GoPerson,  GoHome, GoMail, GoMortarBoard, GoMarkGithub, GoNote, GoFile } from "react-icons/go";
+import { SiBloglovin } from "react-icons/si";
+import { IoNewspaperOutline } from "react-icons/io5";
+import {GoPerson,  GoHome, GoMail, GoMortarBoard, GoMarkGithub } from "react-icons/go";
 
 function About() {
   return(
@@ -39,8 +41,8 @@ function About() {
               <li>
                 <a href="https://github.com/SavinPark"><GoMarkGithub/><span>Git</span></a>
               </li>
-              <li><GoNote/><span>BLOG</span></li>
-              <li><a href='../박은지.pdf' download><GoFile/><span>RESUME</span></a></li>
+              <li><SiBloglovin/><span>BLOG</span></li>
+              <li><a href='../박은지.pdf' download><IoNewspaperOutline/><span>RESUME</span></a></li>
             </ul>
           </div>
         </div>
