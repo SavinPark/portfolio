@@ -23,7 +23,7 @@ function Projects() {
             end: "2022.05.14",
             tech: ["HTML5", "CSS3"],
             work: ["HTML 마크업", "CSS 스타일링"],
-            demo: "",
+            demo: "#projects",
             source: "https://github.com/SavinPark/Coupang-Offer",
         },
         {
@@ -34,7 +34,7 @@ function Projects() {
             end: "2022.05.14",
             tech: ["HTML5", "CSS3"],
             work: ["HTML 마크업", "CSS 스타일링"],
-            demo: "",
+            demo: "#projects",
             source: "https://github.com/SavinPark/Coupang-CategoryBest",
         },
         {
@@ -45,7 +45,7 @@ function Projects() {
             end: "2022.05.14",
             tech: ["HTML5", "CSS3", "JavaScript"],
             work: ["HTML 마크업", "CSS 스타일링"],
-            demo: "",
+            demo: "#projects",
             source: "https://github.com/SavinPark/Coupang-Header",
         },
         {
@@ -56,7 +56,7 @@ function Projects() {
             end: "2022.05.14",
             tech: ["HTML5", "CSS3", "JavaScript"],
             work: ["HTML 마크업", "CSS 스타일링"],
-            demo: "",
+            demo: "#projects",
             source: "https://github.com/SavinPark/Coupang-Navigation_Footer",
         },
         {
@@ -78,7 +78,8 @@ function Projects() {
             end: "2022.06.30",
             tech: ["HTML5", "CSS3", "JavaScript", "Event delegation", "Intersection Observer API", "Proxy", "Observer Pattern"],
             work: [],
-            demo: "https://savinpark.github.io/news-viewer/",
+            // demo: "https://savinpark.github.io/news-viewer/",
+            demo: "#projects",
             source: "https://github.com/SavinPark/news-viewer",
         },
         {
@@ -112,7 +113,7 @@ function Projects() {
             tech: ["MySQL", "Java", "Spring", "JSP", "MyBatis", "Bootstrap"],
             work: ["데이터베이스 설계 및 구축", "MVC 구조의 Backend 구현", "Bootstrap을 활용한 Frontend 구현"],
             demo: "#projects",
-            source: "https://github.com/SavinPark/Eat-Healthy",
+            source: "https://github.com/SavinPark/MRS",
         },
         {
             title: "Portfolio",
