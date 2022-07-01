@@ -11,9 +11,14 @@ background-position: center;
 
 function Card ({proj}) {
 
+    const onAlert = () => {
+        if (proj.source === '#projects' || proj.detail === '#projects') {
+            alert('준비 중 입니다 : )');
+        }
+    }
     return (
         <div className="projects-item">
-            <CardFront className="project-front" ImgSrc={`${process.env.PUBLIC_URL}/images/${proj.image}.png`}>
+            <CardFront className="project-front" ImgSrc={`${process.env.PUBLIC_URL}/images/${proj.image}`}>
                 <div className="info">
                     <h3 className="title">{proj.title}</h3>
                     <p className="click-msg">click</p>
@@ -44,8 +49,8 @@ function Card ({proj}) {
                         })}
                     </ul>
                 </div>
-                <div className="btn-group">
-                    <a href={proj.detail}><button>Source Code</button></a>
+                <div className="btn-group" onClick={onAlert}>
+                    <a href={proj.source}><button>Source Code</button></a>
                     <a href={proj.demo}><button>Demo</button></a>
                 </div>
             </div>

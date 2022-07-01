@@ -1,4 +1,4 @@
-@include desktop() {
+// @include desktop() {
     header {
         position: sticky;
         top: 0;
@@ -37,6 +37,7 @@
         // Wave
         .custom-shape-divider-top-1656519075 {
             position: absolute;
+            top: 59px;
             left: 0;
             width: 100%;
             overflow: hidden;
@@ -52,4 +53,4 @@
             fill: #fff;
         }
     }
-}
+// }

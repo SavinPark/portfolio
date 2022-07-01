@@ -7,11 +7,24 @@
     }
 
     #introduction {
+        height: 450px;
+        // width: 1400px;
         font-size: 36px;
         font-weight: 600;
         line-height: 1.5;
+        text-align: center;
         color: rgba(0, 0, 0, .7);
         margin-top: 0px;
+        // border: 1px solid red;
+        .typeit {
+            height: 120px;
+            margin-bottom: 16px;
+            // border: 1px solid red;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+        }
     }
     #profile {
         padding-bottom: 40px;
@@ -30,7 +43,7 @@
             width: 280px;
             height: 360px;
             border-radius: 50%;
-            background-image: url('./profileImg.jpg');
+            background-image: url('./profileImg.webp');
             background-size: cover;
         }
         .profile-list {
