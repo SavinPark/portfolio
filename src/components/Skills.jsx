@@ -1,28 +1,53 @@
+import React from "react";
+import styled from 'styled-components';
+
+const Ability = styled.div`
+width: ${props => props.ability}%;
+`;
+
 function Skills() {
 
-    const skills = ['HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'Vuetify',
-                    'JavaScript', 'jQuery', 'React', 'Vue.js',
-                    'Git', 'Github',
-                    'Figma', 'Adobe Photoshop',
-                    'MySQL', 'Java', 'Spring', 'Python',];
+    // const skills = ['HTML5', 'CSS3', 'SCSS', 'Bootstrap', 'Vuetify',
+    //                 'JavaScript', 'jQuery', 'React', 'Vue.js',
+    //                 'Git', 'Github',
+    //                 'Figma', 'Adobe Photoshop',
+    //                 'MySQL', 'Java', 'Spring', 'Python',];
+    const mainSkills = [
+        { lang: 'HTML5', ability: 80 },
+        { lang: 'CSS3', ability: 80 },
+        { lang: 'JavaScript', ability: 70 },
+        { lang: 'jQuery', ability: 50 },
+        { lang: 'React',  ability: 70 },
+        { lang: 'Vue.js',  ability: 20 },
+        { lang: 'SCSS', ability: 60 },
+        { lang: 'Bootstrap',  ability: 70 },
+        { lang: 'Figma', ability: 70 },
+        { lang: 'MySQL', ability: 30 },
+        { lang: 'Github', ability: 40 },
+    ];
+
     return(
         <section id="skills">
-            <h2>Skills</h2>
-            <p>준비 중 입니다.</p>
-            {/* <ul>
+            <h2>Main Skills</h2>
+            <ul>
                 {
-                    skills.map((ele, idx) => {
+                    mainSkills.map((ele) => {
                         return (
-                            <li key={idx}>
-                                <div className="skill-name">{ele}</div>
+                            <li key={`${ele.lang}-${ele.ability}`}>
+                                <div className="skill-name">{ele.lang}</div>
                                 <div className="ability-bar">
-                                    <div className="ability-percent"></div>
+                                    <Ability ability={ele.ability}>
+                                        <div className="ability-percent">
+                                            <span className="percent">{ele.ability} %</span>
+                                        </div>
+                                    </Ability>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta fugiat nam maxime sit laudantium aspernatur expedita sunt saepe, nobis labore doloribus similique quae! Quas doloribus molestiae rem repellendus reiciendis!</p>
                                 </div>
                             </li>
                         )
                     })
                 }
-            </ul> */}
+            </ul>
         </section>
     );
 }

@@ -1,10 +1,10 @@
 .projects-item {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
     transition: 1.8s;
     transform-style: preserve-3d;
-    // border: 1px dashed purple;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .18);
     cursor: pointer;
 
     h3 {
@@ -21,11 +21,6 @@
     }
 
     .project-front {
-        //     position: relative;
-        background-image: url("../images/letter.jpg");
-        background-size: cover;
-        transition: background-color 2s;
-
         .info {
             display: none;
         }
@@ -35,11 +30,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 20px;
-            font-weight: 500;
             line-height: 1.5;
-            color: #fff;
-
+            
             &::after {
                 content: '';
                 position: absolute;
@@ -57,14 +49,92 @@
                 width: 70%;
                 height: 70%;
                 z-index: 1;
+                
+                .title {
+                    color: #fff;
+                    font-size: 18px;
+                }
+
+                .click-msg {
+                    padding-top: 10px;
+                    font-size: 16px;
+                    color: #CAF7E3;
+                    // border-bottom: 1px solid #fff;
+                }
             }
         }
     }
 
     .project-back {
         transform: rotateY(180deg);
-        padding: 16px;
+        padding: 12px;
+        font-size: 12px;
         background: #fff;
-        box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .2);
+
+        h3 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #4C4C6D;
+        }
+        h4 {
+            margin-right: 10px;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .back-inner  {
+            margin-bottom: 12px;
+        }
+        .detail {
+            margin-bottom: 16px;
+        }
+        .time {
+            display: flex;
+        }
+        .tech {
+            display: flex;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 6px;
+                }
+            }
+        }
+        .work {
+            h4 {
+                margin-bottom: 8px;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 80%;
+                li {
+                    margin-right: 6px;
+                    .dot {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+        
+        .btn-group {
+            margin-top: 18px;
+            button {
+                margin-right: 10px;
+                padding: 4px 8px;
+                border: none;
+                border-radius: 12px;
+                color: #fff;
+                background-color: #FFC3C3;
+                cursor: pointer;
+                transition: all 0.2s linear;
+                &:focus,
+                &:hover {
+                    // color: #48126a;
+                    background-color: #F47C7C;
+                }
+            }
+        }
+
     }
 }
