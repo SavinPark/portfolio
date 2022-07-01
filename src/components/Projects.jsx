@@ -122,7 +122,7 @@ function Projects() {
             start: "2022.06.28",
             end: "2022.07.01",
             tech: ["Scss", "styled-component", "React", "react hook"],
-            work: ["디자인", "Frontend"],
+            work: ["Design", "Frontend"],
             demo: "https://savinpark.github.io/portfolio/",
             source: "https://github.com/SavinPark/portfolio",
         },
