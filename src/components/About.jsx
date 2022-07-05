@@ -41,8 +41,8 @@ function About() {
               <li>
                 <a href="https://github.com/SavinPark"><GoMarkGithub/><span>Git</span></a>
               </li>
-              <li><SiBloglovin/><span>BLOG</span></li>
-              <li><a href='../박은지.pdf' download><IoNewspaperOutline/><span>RESUME</span></a></li>
+              <li><a href="https://www.notion.so/EUNJI-PARK-bbd411984c9c40b881930c914dcc5374"><SiBloglovin/><span>BLOG</span></a></li>
+              <li><a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/62350ae7-acd5-4efe-9a9b-bb0898750967/%EB%B0%95%EC%9D%80%EC%A7%80.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220703%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220703T140104Z&X-Amz-Expires=86400&X-Amz-Signature=cdec72c19a98397abfe7f1ab603d052fbd90027bc8e24fbeef730743c8aaf668&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EB%25B0%2595%25EC%259D%2580%25EC%25A7%2580.pdf%22&x-id=GetObject"><IoNewspaperOutline/><span>RESUME</span></a></li>
             </ul>
           </div>
         </div>
