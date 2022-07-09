@@ -7,7 +7,7 @@ function Navigation () {
             <div className="header-inner">
                 <div className="container">
                     <div id="logo">
-                        <a href="/">Park Eunji</a>
+                        <a href="/portfolio">Park Eunji</a>
                     </div>
                     <nav>
                         <a href="#about">&lt; About /&gt;</a>
